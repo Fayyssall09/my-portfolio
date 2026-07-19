@@ -30,7 +30,7 @@ window.addEventListener('scroll', () => {
     navLi.forEach(a => {
         a.classList.remove('active');
         if (a.getAttribute('href').includes(current)) {
-            // Optional: add active class logic css if needed
+            // Logika aktif jika diperlukan
         }
     });
 });
