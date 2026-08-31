@@ -3,259 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faizal Izma | Portfolio</title>
+    <title>Faisal Izma | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-    <div class="bg-overlay"></div>
+    <div class="bg-gradient"></div>
 
-    <!-- NAVBAR DENGAN HAMBURGER MENU -->
     <nav class="navbar">
         <div class="logo">
-            <i class="fas fa-user-astronaut fa-bounce icon-primary"></i> FAIZAL
-        </div>
-        <!-- Tombol Garis 3 untuk Mobile -->
-        <div class="menu-toggle" id="mobile-menu">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-user-astronaut fa-bounce text-primary"></i> FAISAL
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li> 
-            <li><a href="#contact">Location</a></li>
+            <li><a href="#services">Services</a></li> <li><a href="#contact">Location</a></li>
         </ul>
         <div class="social-nav">
-            <a href="https://github.com/Fayyssall09" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/fayyss.sall" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Fayyssall09" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/fayyss.sall?igsh=MWtvMDE1ZGd1M3QzMw%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
     </nav>
 
-    <!-- HERO SECTION DENGAN EFEK NGETIK -->
-    <section id="home" class="hero section-pad">
+    <section id="home" class="hero">
         <div class="hero-content" data-aos="fade-right">
-            <span class="badge badge-primary">Informatics Student</span>
-            <!-- Elemen ini yang akan dikontrol oleh Typed.js -->
-            <h1 class="hero-title"><span class="typing"></span></h1>
+            <span class="badge">Informatics Student</span>
+            <h1>I'm <span class="typing"></span></h1>
+            <p>Mahasiswa Teknik Informatika di <strong>UPS Tegal</strong>. Fokus pada Web Development & Creative Coding.</p>
             <a href="#projects" class="btn-main">Lihat Project <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="hero-img-container floating-wrapper" data-aos="zoom-in">
-            <div class="img-box-frame" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.4">
-               <img src="./me.jpeg" alt="Faizal Izma"> 
+        <div class="hero-img" data-aos="zoom-in">
+            <div class="img-box">
+                <img src="gambar almet pndok.jpg" alt="Faisal Izma">
             </div>
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="terminal-wrap section-pad" data-aos="fade-up">
-        <h2 class="section-title">About Me</h2>
-        <div class="terminal-window" data-tilt data-tilt-max="2">
+    <section id="about" class="terminal-wrap" data-aos="fade-up">
+        <div class="terminal-window">
             <div class="terminal-header">
-                <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
-                <div class="title">faizal_system.exe</div>
+                <div class="dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="title">faisal_system.exe</div>
             </div>
-            <div class="terminal-body font-fira">
-                <p><span class="cmd">></span> Current Location: <span class="str">Sitanggal, Brebes</span></p>
+            <div class="terminal-body">
+                <p><span class="cmd">></span> Current Location: <span class="str">Sitanggal, Larangan, Brebes</span></p>
                 <p><span class="cmd">></span> Education: <span class="str">Universitas Pancasakti Tegal</span></p>
-                <p><span class="cmd">></span> Status: <span class="str">Undergraduate Student</span></p>
-                <p><span class="cmd">></span> Certification: <span class="str">Junior Web Programmer (LSP TIKOM)</span></p>
+                <p><span class="cmd">></span> Status: <span class="str">Active Student</span></p>
+                <p><span class="cmd">></span> Passion: <span class="str">Fullstack & Game Logic</span></p>
             </div>
         </div>
     </section>
 
-    <!-- SKILLS SECTION -->
     <section id="skills" class="section-pad">
         <h2 class="section-title">Tech Stack & Tools</h2>
         <div class="grid-container">
-            <div class="card-box" data-aos="flip-up"><i class="fab fa-laravel icon-skill" style="color: #FF2D20;"></i><h3>Laravel & PHP</h3></div>
-            <div class="card-box" data-aos="flip-up" data-aos-delay="100"><i class="fas fa-database icon-skill" style="color: #00758F;"></i><h3>MySQL</h3></div>
-            <div class="card-box" data-aos="flip-up" data-aos-delay="200"><i class="fab fa-js icon-skill" style="color: #F7DF1E;"></i><h3>JS / HTML / CSS</h3></div>
+            <div class="card-box" data-aos="flip-up">
+                <i class="fab fa-laravel icon-skill" style="color: #FF2D20;"></i>
+                <h3>Laravel</h3>
+            </div>
+            <div class="card-box" data-aos="flip-up" data-aos-delay="100">
+                <i class="fas fa-database icon-skill" style="color: #00758F;"></i>
+                <h3>MySQL</h3>
+            </div>
+            <div class="card-box" data-aos="flip-up" data-aos-delay="200">
+                <i class="fab fa-js icon-skill" style="color: #F7DF1E;"></i>
+                <h3>JS / HTML / CSS</h3>
+            </div>
+            <div class="card-box" data-aos="flip-up" data-aos-delay="300">
+                <i class="fas fa-file-excel icon-skill" style="color: #1D6F42;"></i>
+                <h3>Excel & Office</h3>
+            </div>
         </div>
     </section>
 
-    <!-- PROJECTS SECTION (Format asli dengan tambahan GAMBAR) -->
     <section id="projects" class="section-pad">
         <h2 class="section-title">Featured Projects</h2>
         <div class="grid-container">
-            
             <div class="project-card" data-aos="fade-up">
-                <!-- Tambahkan link gambar project-mu di src ini -->
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Koperasi PDAM" class="project-img">
-                <div class="p-header font-fira p-header-primary">LARAVEL</div>
-                <h3>Sistem Koperasi PDAM Brebes</h3>
-                <p>Pengembangan web manajemen Koperasi PDAM terintegrasi K-Means Clustering (Variabel: nama, pinjaman, pokok, bunga, durasi).</p>
-                <a href="#" class="p-btn btn-primary-text">Detail Project <i class="fas fa-external-link-alt"></i></a>
+                <div class="p-header">PHP / LARAVEL</div>
+                <h3>Faisal Shift Kerja</h3>
+                <p>Aplikasi manajemen jadwal kerja yang efisien dan dinamis.</p>
+                <a href="http://aisal-shift-kerja.infinityfreeapp.com" target="_blank" class="p-btn">Visit Link <i class="fas fa-external-link-alt"></i></a>
             </div>
-
             <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop" alt="Toko Kelontong" class="project-img">
-                <div class="p-header font-fira p-header-primary">WEB APP</div>
-                <h3>Toko Kelontong Jaya</h3>
-                <p>Aplikasi manajemen inventaris toko retail untuk melacak stok barang harian dan mingguan secara efisien.</p>
-                <a href="#" class="p-btn btn-primary-text">Detail Project <i class="fas fa-external-link-alt"></i></a>
+                <div class="p-header">WEB APP</div>
+                <h3>Clever Fysal</h3>
+                <p>Aplikasi web modern yang terintegrasi hosting Netlify.</p>
+                <a href="https://clever-fysal.netlify.app/" target="_blank" class="p-btn">Visit Link <i class="fas fa-external-link-alt"></i></a>
             </div>
-
             <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop" alt="Web Desa" class="project-img">
-                <div class="p-header font-fira p-header-primary">LARAVEL</div>
-                <h3>Portal Berita Kampus</h3>
-                <p>Platform portal berita yang dibangun untuk departemen HUMAS guna mengelola publikasi dari 40 divisi kampus.</p>
-                <a href="#" class="p-btn btn-primary-text">Detail Project <i class="fas fa-globe"></i></a>
+                <div class="p-header">GAME LOGIC</div>
+                <h3>Slither.io Engine</h3>
+                <p>Analisis mekanik game ular online populer.</p>
+                <a href="http://slither.com/io" target="_blank" class="p-btn">Play Game <i class="fas fa-gamepad"></i></a>
             </div>
-
             <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop" alt="Sate Kambing" class="project-img">
-                <div class="p-header font-fira p-header-primary">WORDPRESS</div>
-                <h3>Website Sate Kambing</h3>
-                <p>Pembuatan website company profile kuliner lokal menggunakan CMS WordPress dan Elementor (Astra Theme).</p>
-                <a href="#" class="p-btn btn-primary-text">Detail Project <i class="fas fa-file-alt"></i></a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- SCRIPT EXTERNAL (Wajib Ada) -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    
-    <!-- Panggil File JS milikmu -->
-    <script src="script.js"></script>
-</body>
-</html><!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faizal Izma | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body>
-
-    <div class="bg-overlay"></div>
-
-    <!-- NAVBAR DENGAN GARIS 3 (HAMBURGER) -->
-    <nav class="navbar">
-        <div class="logo">
-            <i class="fas fa-user-astronaut fa-bounce icon-primary"></i> FAIZAL
-        </div>
-        <!-- Ikon Garis 3 -->
-        <div class="menu-toggle" id="mobile-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li> 
-            <li><a href="#contact">Location</a></li>
-        </ul>
-        <div class="social-nav">
-            <a href="https://github.com/Fayyssall09" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/fayyss.sall" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
-    </nav>
-
-    <!-- HERO SECTION DENGAN EFEK NGETIK -->
-    <section id="home" class="hero section-pad">
-        <div class="hero-content" data-aos="fade-right">
-            <span class="badge badge-primary">Informatics Student</span>
-            <h1 class="hero-title"><span class="typing"></span></h1>
-            <a href="#projects" class="btn-main">Lihat Project <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="hero-img-container floating-wrapper" data-aos="zoom-in">
-            <div class="img-box-frame" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.4">
-               <img src="./me.jpeg" alt="Faizal Izma"> 
+                <div class="p-header">CLONE</div>
+                <h3>Flappy Bird</h3>
+                <p>Simulasi game arcade klasik dengan kontrol responsif.</p>
+                <a href="https://flappybird.io/" target="_blank" class="p-btn">Play Game <i class="fas fa-play"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="terminal-wrap section-pad" data-aos="fade-up">
-        <h2 class="section-title">About Me</h2>
-        <div class="terminal-window" data-tilt data-tilt-max="2">
-            <div class="terminal-header">
-                <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
-                <div class="title">faizal_system.exe</div>
-            </div>
-            <div class="terminal-body font-fira">
-                <p><span class="cmd">></span> Current Location: <span class="str">Sitanggal, Brebes</span></p>
-                <p><span class="cmd">></span> Education: <span class="str">Universitas Pancasakti Tegal</span></p>
-                <p><span class="cmd">></span> Status: <span class="str">Undergraduate Student</span></p>
-                <p><span class="cmd">></span> Certification: <span class="str">Junior Web Programmer (LSP TIKOM)</span></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="section-pad">
-        <h2 class="section-title">Tech Stack & Tools</h2>
+    <section id="services" class="section-pad">
+        <h2 class="section-title">Website Services</h2>
         <div class="grid-container">
-            <div class="card-box" data-aos="flip-up"><i class="fab fa-laravel icon-skill" style="color: #FF2D20;"></i><h3>Laravel & PHP</h3></div>
-            <div class="card-box" data-aos="flip-up" data-aos-delay="100"><i class="fas fa-database icon-skill" style="color: #00758F;"></i><h3>MySQL</h3></div>
-            <div class="card-box" data-aos="flip-up" data-aos-delay="200"><i class="fab fa-js icon-skill" style="color: #F7DF1E;"></i><h3>JS / HTML / CSS</h3></div>
+            <div class="card-box" data-aos="zoom-in">
+                <i class="fas fa-laptop-code icon-skill" style="color: var(--primary);"></i>
+                <h3>Web Development</h3>
+                <p style="color: var(--gray); margin-top: 10px; font-size: 0.9rem;">Pembuatan website custom (Landing Page, Company Profile, atau Sistem Informasi) dengan teknologi terbaru.</p>
+            </div>
+            <div class="card-box" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-mobile-alt icon-skill" style="color: #a5d6a7;"></i>
+                <h3>Responsive Design</h3>
+                <p style="color: var(--gray); margin-top: 10px; font-size: 0.9rem;">Memastikan website Anda tampil sempurna di semua perangkat, baik smartphone, tablet, maupun desktop.</p>
+            </div>
+            <div class="card-box" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-search-dollar icon-skill" style="color: #ffbd2e;"></i>
+                <h3>SEO & Speed</h3>
+                <p style="color: var(--gray); margin-top: 10px; font-size: 0.9rem;">Optimasi kecepatan loading dan SEO dasar agar website Anda lebih mudah ditemukan di Google.</p>
+            </div>
+        </div>
+
+        <div class="contact-cta" data-aos="fade-up">
+            <p>Tertarik membuat website impian Anda?</p>
+            <a href="mailto:issalykc@gmail.com?subject=Tanya%20Jasa%20Pembuatan%20Website" class="btn-main">
+                <i class="fas fa-envelope"></i> Hubungi via Email
+            </a>
         </div>
     </section>
 
-    <!-- PROJECTS SECTION (3 Game + 1 PDAM dengan Gambar) -->
-    <section id="projects" class="section-pad">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="grid-container">
-            
-            <!-- PROJECT 1: GAME -->
-            <div class="project-card" data-aos="fade-up">
-                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop" alt="Game 1" class="project-img">
-                <div class="p-header font-fira p-header-primary">GAME DEV</div>
-                <h3>Game Project 1</h3>
-                <p>Deskripsi game pertama yang telah saya kembangkan.</p>
-                <a href="#" class="p-btn btn-primary-text">Detail Project <i class="fas fa-gamepad"></i></a>
-            </div>
-
-            <!-- PROJECT 2: GAME -->
-            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800&auto=format&fit=crop" alt="Game 2" class="project-img">
-                <div class="p-header font-fira p-header-primary">GAME DEV</div>
-                <h3>Game Project 2</h3>
-                <p>Deskripsi game kedua dengan fitur dan mekanik yang interaktif.</p>
-                <a href="#" class="p-btn btn-primary-text">Detail Project <i class="fas fa-gamepad"></i></a>
-            </div>
-
-            <!-- PROJECT 3: GAME -->
-            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800&auto=format&fit=crop" alt="Game 3" class="project-img">
-                <div class="p-header font-fira p-header-primary">GAME DEV</div>
-                <h3>Game Project 3</h3>
-                <p>Deskripsi game ketiga yang berfokus pada pengalaman pengguna yang menyenangkan.</p>
-                <a href="#" class="p-btn btn-primary-text">Detail Project <i class="fas fa-gamepad"></i></a>
-            </div>
-
-            <!-- PROJECT 4: PDAM -->
-            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="PDAM" class="project-img">
-                <div class="p-header font-fira p-header-primary">LARAVEL</div>
-                <h3>Sistem Koperasi PDAM Brebes</h3>
-                <p>Manajemen Koperasi mengintegrasikan algoritma K-Means Clustering dengan variabel: nama, nominal pinjaman, pokok, bunga, dan durasi.</p>
-                <a href="#" class="p-btn btn-primary-text">Detail Project <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
+    <section id="contact" class="section-pad">
+        <h2 class="section-title">My Home Location</h2>
+        <div class="map-container" data-aos="zoom-in">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.297463584852!2d108.97341857504424!3d-6.974186693026521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fa43632128c7b%3A0x6031268480358896!2sSitanggal%2C%20Kec.%20Larangan%2C%20Kabupaten%20Brebes%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1708080000000!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
-    <!-- SCRIPT EXTERNAL -->
+    <footer>
+        <p>© 2027 Faisal Izma. Built with <i class="fas fa-heart text-primary"></i></p>
+    </footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    
-    <!-- Panggil File JS milikmu -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
