@@ -6,20 +6,6 @@ AOS.init({
     offset: 100
 });
 
-// Efek Mengetik Nama
-const typed = new Typed('.typing', {
-    strings: [
-        "Faisal Izma.", 
-        "seorang Web Developer.", 
-        "Junior Web Programmer.",
-        "Mahasiswa Teknik Informatika."
-    ],
-    typeSpeed: 60,
-    backSpeed: 30,
-    backDelay: 1500,
-    loop: true
-});
-
 // Smooth Scroll Navbar Active State & Efek Interaktif
 const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('.nav-links li a');
