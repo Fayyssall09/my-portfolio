@@ -3,11 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faizal Isma | Portfolio</title>
+    <title>Faisal Izma | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-overlay"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-user-astronaut fa-bounce icon-primary"></i> FAISAL
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li> 
+            <li><a href="#contact">Location</a></li>
+        </ul>
+        <div class="social-nav">
+            <a href="https://github.com/Fayyssall09" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/fayyss.sall" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero section-pad">
+        <div class="hero-content" data-aos="fade-right">
+            <span class="badge badge-primary">Informatics Student</span>
+            <h1 class="hero-title">I'm <span class="text-primary">Faizal isma</span>,<br>I'm a bachelor of informatics engineering,<br>I want to become a full-stack web developer.</h1>
+            <a href="#projects" class="btn-main mt-4">Lihat Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-img-container floating-wrapper" data-aos="zoom-in">
+            <div class="img-box-frame" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.4">
+               <img src="./me.jpeg" alt="Faizal Isma"> 
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="terminal-wrap section-pad" data-aos="fade-up">
+        <h2 class="section-title">About Me</h2>
+        <div class="terminal-window" data-tilt data-tilt-max="2" data-tilt-speed="400">
+            <div class="terminal-header">
+                <div class="dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="title">faizal_system.exe</div>
+            </div>
+            <div class="terminal-body font-fira">
+                <p><span class="cmd">></span> Current Location: <span class="str">Sitanggal, Larangan, Brebes</span></p>
+                <p><span class="cmd">></span> Education: <span class="str">Universitas Pancasakti Tegal</span></p>
+                <p><span class="cmd">></span> Status: <span class="str">Undergraduate Student</span></p>
+                <p><span class="cmd">></span> Certification: <span class="str">Junior Web Programmer (LSP TIKOM)</span></p>
+                <p><span class="cmd">></span> Objective: <span class="str">Membangun UI modern dan sistem backend efisien.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-pad">
+        <h2 class="section-title">Tech Stack & Tools</h2>
+        <div class="grid-container">
+            <div class="card-box" data-aos="flip-up" data-tilt data-tilt-max="10">
+                <i class="fab fa-laravel icon-skill" style="color: #FF2D20;"></i>
+                <h3>Laravel & PHP</h3>
+                <p class="skill-desc">Backend Framework</p>
+            </div>
+            <div class="card-box" data-aos="flip-up" data-aos-delay="100" data-tilt data-tilt-max="10">
+                <i class="fas fa-database icon-skill" style="color: #00758F;"></i>
+                <h3>MySQL</h3>
+                <p class="skill-desc">Database Management</p>
+            </div>
+            <div class="card-box" data-aos="flip-up" data-aos-delay="200" data-tilt data-tilt-max="10">
+                <i class="fab fa-js icon-skill" style="color: #F7DF1E;"></i>
+                <h3>JS / HTML / CSS</h3>
+                <p class="skill-desc">Frontend & Responsive UI</p>
+            </div>
+            <div class="card-box" data-aos="flip-up" data-aos-delay="300" data-tilt data-tilt-max="10">
+                <i class="fas fa-file-excel icon-skill" style="color: #1D6F42;"></i>
+                <h3>Data Analysis</h3>
+                <p class="skill-desc">Excel & Algorithm Logic</p>
+            </div>
+            <!-- TAMBAHAN SKILL WORD & PPT -->
+            <div class="card-box" data-aos="flip-up" data-aos-delay="400" data-tilt data-tilt-max="10">
+                <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 25px; transform: translateZ(30px);">
+                    <i class="fas fa-file-word" style="color: #2B579A; font-size: 3.2rem;"></i>
+                    <i class="fas fa-file-powerpoint" style="color: #B7472A; font-size: 3.2rem;"></i>
+                </div>
+                <h3>Word & PPT</h3>
+                <p class="skill-desc">Documentation & Presentation</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-pad">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="grid-container">
+            <!-- PROJECT 1 -->
+            <div class="project-card" data-aos="fade-up" data-tilt data-tilt-max="5">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Dashboard Koperasi">
+                </div>
+                <div class="project-content">
+                    <div class="p-header font-fira p-header-primary">LARAVEL / AI</div>
+                    <h3>Sistem Koperasi PDAM</h3>
+                    <p>Pengembangan web manajemen koperasi berbasis Laravel yang mengintegrasikan algoritma K-Means Clustering untuk analisis peminjam.</p>
+                    <a href="#" class="p-btn btn-primary-text mt-auto">Detail Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <!-- PROJECT 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-max="5">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80" alt="Point of Sale">
+                </div>
+                <div class="project-content">
+                    <div class="p-header font-fira p-header-primary">WEB APP</div>
+                    <h3>Toko Kelontong Jaya</h3>
+                    <p>Aplikasi manajemen inventaris toko retail untuk melacak stok harian dan mingguan, lengkap dengan fitur cetak laporan operasional.</p>
+                    <a href="#" class="p-btn btn-primary-text mt-auto">Detail Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <!-- PROJECT 3 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-tilt data-tilt-max="5">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1555529771-835f59fc5efe?auto=format&fit=crop&w=600&q=80" alt="Sate Kambing Website">
+                </div>
+                <div class="project-content">
+                    <div class="p-header font-fira p-header-primary">WORDPRESS</div>
+                    <h3>Bisnis Sate Kambing</h3>
+                    <p>Pembuatan website profil bisnis kuliner lokal menggunakan CMS WordPress, tema Astra, dan Elementor untuk antarmuka responsif.</p>
+                    <a href="#" class="p-btn btn-primary-text mt-auto">Detail Project <i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+            <!-- PROJECT 4 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300" data-tilt data-tilt-max="5">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Cyber Security">
+                </div>
+                <div class="project-content">
+                    <div class="p-header font-fira p-header-primary">CYBER SECURITY</div>
+                    <h3>XSS Vulnerability Analysis</h3>
+                    <p>Riset akademis mengenai deteksi dan analisis kerentanan Cross-Site Scripting (XSS) pada aplikasi web menggunakan OWASP ZAP.</p>
+                    <a href="#" class="p-btn btn-primary-text mt-auto">Read Paper <i class="fas fa-file-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="Ini kode `index.html` dan `style.css` yang sudah diperbarui secara menyeluruh. Teks animasi di bagian Hero sudah diganti, skill Word dan PowerPoint ditambahkan dengan ikon resmi, dan setiap kartu proyek sekarang memiliki area gambar visual yang responsif.
+
+**index.html**
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faizal Isma | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="[https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap](https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap)" rel="stylesheet">
+    <link href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)" rel="stylesheet">
+    <link href="[https://unpkg.com/aos@2.3.1/dist/aos.css](https://unpkg.com/aos@2.3.1/dist/aos.css)" rel="stylesheet">
 </head>
 <body>
 
@@ -26,8 +186,8 @@
             <li><a href="#contact">Location</a></li>
         </ul>
         <div class="social-nav">
-            <a href="https://github.com/Fayyssall09" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/fayyss.sall" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="[https://github.com/Fayyssall09](https://github.com/Fayyssall09)" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="[https://www.instagram.com/fayyss.sall](https://www.instagram.com/fayyss.sall)" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
     </nav>
 
@@ -107,28 +267,28 @@
         <h2 class="section-title">Featured Projects</h2>
         <div class="grid-container">
             <div class="project-card" data-aos="fade-up" data-tilt data-tilt-max="5">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Project 1" class="project-img">
+                <img src="[https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop](https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop)" alt="Project 1" class="project-img">
                 <div class="p-header font-fira p-header-primary">LARAVEL / AI</div>
                 <h3>Sistem Koperasi PDAM</h3>
                 <p>Pengembangan web manajemen koperasi berbasis Laravel yang mengintegrasikan algoritma K-Means Clustering.</p>
                 <a href="#" class="p-btn btn-primary-text">Detail Project <i class="fas fa-external-link-alt"></i></a>
             </div>
             <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-max="5">
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop" alt="Project 2" class="project-img">
+                <img src="[https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop](https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop)" alt="Project 2" class="project-img">
                 <div class="p-header font-fira p-header-primary">WEB APP</div>
                 <h3>Toko Kelontong Jaya</h3>
                 <p>Aplikasi manajemen inventaris toko retail untuk melacak stok harian dan mingguan.</p>
                 <a href="#" class="p-btn btn-primary-text">Detail Project <i class="fas fa-external-link-alt"></i></a>
             </div>
             <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-tilt data-tilt-max="5">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop" alt="Project 3" class="project-img">
+                <img src="[https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop](https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop)" alt="Project 3" class="project-img">
                 <div class="p-header font-fira p-header-primary">WORDPRESS</div>
                 <h3>Bisnis Sate Kambing</h3>
                 <p>Pembuatan website profil bisnis kuliner lokal menggunakan CMS WordPress dan Elementor.</p>
                 <a href="#" class="p-btn btn-primary-text">Detail Project <i class="fas fa-globe"></i></a>
             </div>
             <div class="project-card" data-aos="fade-up" data-aos-delay="300" data-tilt data-tilt-max="5">
-                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop" alt="Project 4" class="project-img">
+                <img src="[https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop)" alt="Project 4" class="project-img">
                 <div class="p-header font-fira p-header-primary">CYBER SECURITY</div>
                 <h3>XSS Vulnerability Analysis</h3>
                 <p>Riset akademis mengenai deteksi kerentanan Cross-Site Scripting (XSS) pada aplikasi web menggunakan OWASP ZAP.</p>
@@ -168,7 +328,7 @@
     <section id="contact" class="section-pad">
         <h2 class="section-title">My Home Location</h2>
         <div class="map-container" data-aos="zoom-in">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.297463584852!2d108.97341857504424!3d-6.974186693026521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fa43632128c7b%3A0x6031268480358896!2sSitanggal%2C%20Kec.%20Larangan%2C%20Kabupaten%20Brebes%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1708080000000!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Lokasi Sitanggal Brebes"></iframe>
+            <iframe src="[https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.297463584852!2d108.97341857504424!3d-6.974186693026521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fa43632128c7b%3A0x6031268480358896!2sSitanggal%2C%20Kec.%20Larangan%2C%20Kabupaten%20Brebes%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1708080000000!5m2!1sid!2sid](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.297463584852!2d108.97341857504424!3d-6.974186693026521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fa43632128c7b%3A0x6031268480358896!2sSitanggal%2C%20Kec.%20Larangan%2C%20Kabupaten%20Brebes%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1708080000000!5m2!1sid!2sid)" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Lokasi Sitanggal Brebes"></iframe>
         </div>
     </section>
 
@@ -176,11 +336,10 @@
         <p class="font-fira text-gray">© 2026 faizalizma.com | Built with <i class="text-primary fas fa-heart"></i></p>
     </footer>
 
-    <!-- Script External -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-    
-    <!-- INI YANG SEBELUMNYA KURANG: Pemanggilan file script.js milikmu -->
-    <script src="script.js"></script>
+    <script src="[https://unpkg.com/aos@2.3.1/dist/aos.js](https://unpkg.com/aos@2.3.1/dist/aos.js)"></script>
+    <script src="[https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js](https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js)"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
 </body>
 </html>
