@@ -240,3 +240,31 @@ footer { padding: 50px; text-align: center; border-top: 1px solid #222; }
     .img-box-frame { width: 280px; height: 280px; }
     .section-title { font-size: 2rem; }
 }
+/* Tambahan untuk membuat Project Cards lebih berisi */
+.project-card p {
+    flex-grow: 1; /* Memastikan tombol selalu sejajar di bawah meski teks berbeda panjang */
+}
+
+/* Memperhalus tampilan efek hover pada elemen yang bisa diklik */
+.p-btn, .btn-main {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* Mengatur warna font icon Python */
+.fa-python {
+    background: -webkit-linear-gradient(#306998, #FFD43B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
