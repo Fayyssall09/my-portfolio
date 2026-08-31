@@ -51,5 +51,3 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-
-// VanillaTilt.js mengaktifkan efek 3D secara otomatis melalui atribut data-tilt di HTML.
