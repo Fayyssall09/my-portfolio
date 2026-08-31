@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faisal Izma | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts Baru: Inter (Body), Libre Baskerville (Headings), Fira Code (Terminal) -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-    <div class="bg-gradient"></div>
+    <div class="bg-overlay"></div> <!-- Overlay Ilustrasi Garis Tipis Emas -->
 
     <nav class="navbar">
         <div class="logo">
-            <i class="fas fa-user-astronaut fa-bounce text-primary"></i> FAISAL
+            <i class="fas fa-user-astronaut fa-bounce icon-primary"></i> FAISAL
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li> <li><a href="#contact">Location</a></li>
+            <li><a href="#services">Services</a></li> 
+            <li><a href="#contact">Location</a></li>
         </ul>
         <div class="social-nav">
             <a href="https://github.com/Fayyssall09" target="_blank"><i class="fab fa-github"></i></a>
@@ -30,21 +32,22 @@
         </div>
     </nav>
 
-    <section id="home" class="hero">
+    <section id="home" class="hero section-pad">
         <div class="hero-content" data-aos="fade-right">
-            <span class="badge">Informatics Student</span>
-            <h1>I'm <span class="typing"></span></h1>
-            <p>Mahasiswa Teknik Informatika di <strong>UPS Tegal</strong>. Fokus pada Web Development & Creative Coding.</p>
+            <span class="badge badge-primary">Informatics Student</span>
+            <h1>I'm <span class="typing typing-primary"></span></h1>
+            <p>Mahasiswa Teknik Informatika di UPS Tegal. Fokus pada Web Development & Creative Coding.</p>
             <a href="#projects" class="btn-main">Lihat Project <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="hero-img" data-aos="zoom-in">
-            <div class="img-box">
-                <img src="gambar almet pndok.jpg" alt="Faisal Izma">
+        <div class="hero-img-container" data-aos="zoom-in">
+            <div class="img-box-frame">
+                <img src="gambar almet pndok.jpg" alt="Faisal Izma"> <!-- FOTO BARU -->
             </div>
         </div>
     </section>
 
-    <section id="about" class="terminal-wrap" data-aos="fade-up">
+    <section id="about" class="terminal-wrap section-pad" data-aos="fade-up">
+        <h2 class="section-title">About Me</h2>
         <div class="terminal-window">
             <div class="terminal-header">
                 <div class="dots">
@@ -54,7 +57,7 @@
                 </div>
                 <div class="title">faisal_system.exe</div>
             </div>
-            <div class="terminal-body">
+            <div class="terminal-body Fira+Code-font">
                 <p><span class="cmd">></span> Current Location: <span class="str">Sitanggal, Larangan, Brebes</span></p>
                 <p><span class="cmd">></span> Education: <span class="str">Universitas Pancasakti Tegal</span></p>
                 <p><span class="cmd">></span> Status: <span class="str">Active Student</span></p>
@@ -89,28 +92,28 @@
         <h2 class="section-title">Featured Projects</h2>
         <div class="grid-container">
             <div class="project-card" data-aos="fade-up">
-                <div class="p-header">PHP / LARAVEL</div>
+                <div class="p-header Fira+Code-font p-header-primary">PHP / LARAVEL</div>
                 <h3>Faisal Shift Kerja</h3>
                 <p>Aplikasi manajemen jadwal kerja yang efisien dan dinamis.</p>
-                <a href="http://aisal-shift-kerja.infinityfreeapp.com" target="_blank" class="p-btn">Visit Link <i class="fas fa-external-link-alt"></i></a>
+                <a href="http://aisal-shift-kerja.infinityfreeapp.com" target="_blank" class="p-btn btn-primary-text">Visit Link <i class="fas fa-external-link-alt"></i></a>
             </div>
             <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="p-header">WEB APP</div>
+                <div class="p-header Fira+Code-font p-header-primary">WEB APP</div>
                 <h3>Clever Fysal</h3>
                 <p>Aplikasi web modern yang terintegrasi hosting Netlify.</p>
-                <a href="https://clever-fysal.netlify.app/" target="_blank" class="p-btn">Visit Link <i class="fas fa-external-link-alt"></i></a>
+                <a href="https://clever-fysal.netlify.app/" target="_blank" class="p-btn btn-primary-text">Visit Link <i class="fas fa-external-link-alt"></i></a>
             </div>
             <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="p-header">GAME LOGIC</div>
+                <div class="p-header Fira+Code-font p-header-primary">GAME LOGIC</div>
                 <h3>Slither.io Engine</h3>
                 <p>Analisis mekanik game ular online populer.</p>
-                <a href="http://slither.com/io" target="_blank" class="p-btn">Play Game <i class="fas fa-gamepad"></i></a>
+                <a href="http://slither.com/io" target="_blank" class="p-btn btn-primary-text">Play Game <i class="fas fa-gamepad"></i></a>
             </div>
             <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="p-header">CLONE</div>
+                <div class="p-header Fira+Code-font p-header-primary">CLONE</div>
                 <h3>Flappy Bird</h3>
                 <p>Simulasi game arcade klasik dengan kontrol responsif.</p>
-                <a href="https://flappybird.io/" target="_blank" class="p-btn">Play Game <i class="fas fa-play"></i></a>
+                <a href="https://flappybird.io/" target="_blank" class="p-btn btn-primary-text">Play Game <i class="fas fa-play"></i></a>
             </div>
         </div>
     </section>
@@ -118,20 +121,20 @@
     <section id="services" class="section-pad">
         <h2 class="section-title">Website Services</h2>
         <div class="grid-container">
-            <div class="card-box" data-aos="zoom-in">
-                <i class="fas fa-laptop-code icon-skill" style="color: var(--primary);"></i>
+            <div class="card-box service-card" data-aos="zoom-in">
+                <i class="fas fa-laptop-code icon-skill icon-primary"></i>
                 <h3>Web Development</h3>
-                <p style="color: var(--gray); margin-top: 10px; font-size: 0.9rem;">Pembuatan website custom (Landing Page, Company Profile, atau Sistem Informasi) dengan teknologi terbaru.</p>
+                <p>Pembuatan website custom (Landing Page, Company Profile, atau Sistem Informasi) dengan teknologi terbaru.</p>
             </div>
-            <div class="card-box" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card-box service-card" data-aos="zoom-in" data-aos-delay="100">
                 <i class="fas fa-mobile-alt icon-skill" style="color: #a5d6a7;"></i>
                 <h3>Responsive Design</h3>
-                <p style="color: var(--gray); margin-top: 10px; font-size: 0.9rem;">Memastikan website Anda tampil sempurna di semua perangkat, baik smartphone, tablet, maupun desktop.</p>
+                <p>Memastikan website Anda tampil sempurna di semua perangkat, baik smartphone, tablet, maupun desktop.</p>
             </div>
-            <div class="card-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card-box service-card" data-aos="zoom-in" data-aos-delay="200">
                 <i class="fas fa-search-dollar icon-skill" style="color: #ffbd2e;"></i>
                 <h3>SEO & Speed</h3>
-                <p style="color: var(--gray); margin-top: 10px; font-size: 0.9rem;">Optimasi kecepatan loading dan SEO dasar agar website Anda lebih mudah ditemukan di Google.</p>
+                <p>Optimasi kecepatan loading dan SEO dasar agar website Anda lebih mudah ditemukan di Google.</p>
             </div>
         </div>
 
@@ -151,7 +154,7 @@
     </section>
 
     <footer>
-        <p>© 2027 Faisal Izma. Built with <i class="fas fa-heart text-primary"></i></p>
+        <p class="Fira+Code-font text-gray">© 2027 Faisal Izma. Built with <heart icon class="text-primary fas fa-heart"></heart></p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
