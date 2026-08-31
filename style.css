@@ -251,3 +251,79 @@ footer { padding: 50px; text-align: center; border-top: 1px solid #222; }
     .img-box-frame { width: 280px; height: 280px; }
     .section-title { font-size: 2rem; }
 }
+
+/* --- STYLE GAMBAR PROJECT --- */
+.project-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px;
+}
+
+.project-card {
+    padding: 0 0 20px 0;
+    overflow: hidden;
+}
+
+.project-card h3, .project-card p, .project-card .p-header, .project-card .p-btn {
+    padding: 0 20px;
+}
+
+.project-card .p-header {
+    margin-top: 10px;
+}
+
+/* --- STYLE MENU HAMBURGER (RESPONSIVE MOBILE) --- */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: #ffd700;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .social-nav {
+        display: none;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background-color: rgba(10, 10, 10, 0.98);
+        border-bottom: 2px solid #ffd700;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        transform: translateY(-150%);
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        z-index: 999;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .nav-links.nav-active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
