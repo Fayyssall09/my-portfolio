@@ -1,11 +1,11 @@
 // Init Animasi Scroll
 AOS.init({
-    duration: 1000, // Durasi AOS diperpanjang agar lebih halus
+    duration: 1000, 
     easing: 'ease-in-out',
     once: true
 });
 
-// Efek Mengetik Nama - MENYESUAIKAN FONT MEWAH
+// Efek Mengetik Nama
 var typed = new Typed('.typing', {
     strings: ["Faisal Izma.", "Developer.", "Gamer."],
     typeSpeed: 90,
@@ -13,7 +13,7 @@ var typed = new Typed('.typing', {
     loop: true
 });
 
-// Smooth Scroll Navbar Active State - LENGKAP & BERFUNGSI
+// Smooth Scroll Navbar Active State
 const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('.nav-links li a');
 
@@ -22,7 +22,6 @@ window.addEventListener('scroll', () => {
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        // Penyesuaian agar section active lebih pas saat discroll
         if (pageYOffset >= (sectionTop - sectionHeight / 2)) {
             current = section.getAttribute('id');
         }
@@ -35,3 +34,5 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// VanillaTilt.js mengaktifkan efek 3D secara otomatis melalui atribut data-tilt di HTML.
