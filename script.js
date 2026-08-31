@@ -7,12 +7,12 @@ AOS.init({
 });
 
 // Efek Mengetik Nama
-var typed = new Typed('.typing', {
+const typed = new Typed('.typing', {
     strings: [
         "Faisal Izma.", 
         "seorang Web Developer.", 
-        "seorang Gamer.",
-        "Mahasiswa Informatika."
+        "Junior Web Programmer.",
+        "Mahasiswa Teknik Informatika."
     ],
     typeSpeed: 60,
     backSpeed: 30,
@@ -39,7 +39,7 @@ window.addEventListener('scroll', () => {
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+        if (window.scrollY >= (sectionTop - sectionHeight / 3)) {
             current = section.getAttribute('id');
         }
     });
