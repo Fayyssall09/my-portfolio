@@ -119,7 +119,7 @@ body {
     perspective: 1000px;
 }
 
-/* FOTO UTAMA BINGKAI STATIS DENGAN SPOTLIGHT KURSOR TERANG */
+/* FOTO UTAMA BINGKAI STATIS DENGAN SPOTLIGHT */
 .spotlight-box-3d {
     position: relative;
     width: 320px;
@@ -164,7 +164,7 @@ body {
     opacity: 1;
 }
 
-/* DESAIN ROBOT 3D WHITE FUTURISTIC (DARI GAMBAR ACUAN) */
+/* DESAIN ROBOT 3D WHITE FUTURISTIC */
 .robot-companion-3d {
     width: 140px;
     perspective: 800px;
@@ -184,7 +184,6 @@ body {
     100% { transform: translateY(-14px) rotateX(6deg); }
 }
 
-/* KEPALA ROBOT PUTIH BUNDAR */
 .robot-head {
     width: 125px;
     height: 100px;
@@ -209,7 +208,6 @@ body {
 .ear-left { left: -8px; }
 .ear-right { right: -8px; }
 
-/* VISOR GELAP KACA ROBOT */
 .robot-face {
     width: 98px;
     height: 64px;
@@ -223,7 +221,6 @@ body {
     border: 2px solid #1c2638;
 }
 
-/* MATA CYAN / BIRU GLOWING */
 .eye {
     width: 32px;
     height: 32px;
@@ -247,7 +244,6 @@ body {
     box-shadow: 0 0 8px var(--blue), 0 0 12px #fff;
 }
 
-/* BADAN ROBOT PUTIH & DASI BIRU */
 .robot-body {
     width: 88px;
     height: 82px;
@@ -316,239 +312,8 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
-/* ABOUT SECTION - PERAKITAN TALI & ID CARD LENTUR SANGAT REALISTIS */
-.id-card-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    user-select: none;
-}
-
-/* SELURUH UNIT TALI DAN KARTU DISATUKAN */
-.lanyard-assembly {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform-origin: top center;
-    cursor: grab;
-    touch-action: none;
-    will-change: transform;
-}
-
-.lanyard-assembly:active {
-    cursor: grabbing;
-}
-
-/* TALI ID CARD */
-.strap {
-    width: 36px;
-    height: 250px;
-    background: linear-gradient(180deg, var(--blue), #0b4570, #04192b);
-    border: 2px solid var(--yellow);
-    border-radius: 4px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.6);
-}
-
-.strap span {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    font-size: 0.72rem;
-    font-weight: bold;
-    color: var(--yellow);
-    letter-spacing: 3px;
-}
-
-.clip {
-    width: 26px;
-    height: 22px;
-    background: linear-gradient(180deg, #eee, #777);
-    border-radius: 4px;
-    border: 2px solid #fff;
-    margin-top: -2px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
-    z-index: 2;
-}
-
-/* KARTU ID CARD */
-.id-card {
-    width: 310px;
-    background: var(--card-bg);
-    border: 2px solid var(--yellow);
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.7), 0 0 20px rgba(255, 215, 0, 0.25);
-    margin-top: -2px;
-}
-
-.id-card-header {
-    text-align: center;
-    font-size: 0.85rem;
-    font-weight: bold;
-    color: var(--yellow);
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-
-.id-photo-container {
-    width: 100%;
-    height: 180px;
-    background: #070913;
-    border: 2px dashed var(--blue);
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.id-card-photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.id-details { margin-top: 15px; text-align: center; }
-.id-details h3 { font-size: 1.4rem; color: #fff; }
-.id-details .role { color: var(--blue); font-size: 0.95rem; font-weight: 500; }
-.id-details p { font-size: 0.9rem; color: var(--gray); }
-.id-social { margin-top: 12px; font-weight: bold; color: var(--yellow); font-size: 0.9rem; }
-
-/* EDUCATION SECTION */
-.education-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-.edu-card {
-    background: var(--card-bg);
-    border: 2px solid var(--border-color);
-    border-radius: 15px;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    transition: 0.3s;
-}
-
-.edu-card:hover {
-    border-color: var(--yellow);
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
-}
-
-.edu-logo {
-    width: 80px;
-    height: 80px;
-    border-radius: 12px;
-    overflow: hidden;
-    background: #070913;
-    border: 1px solid var(--blue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.edu-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    padding: 5px;
-}
-
-.edu-info h3 { font-size: 1.15rem; color: #fff; margin-bottom: 5px; }
-.edu-info .location { color: var(--gray); font-size: 0.85rem; margin-bottom: 8px; }
-.edu-tag { 
-    font-size: 0.75rem; 
-    background: rgba(0, 210, 255, 0.15); 
-    color: var(--blue); 
-    padding: 3px 10px; 
-    border-radius: 10px; 
-    border: 1px solid var(--blue);
-}
-
-/* SECTIONS COMMON */
-.section-pad { padding: 80px 8%; }
-.section-title { 
-    font-size: 2rem; 
-    margin-bottom: 40px; 
-    color: var(--text); 
-    border-left: 5px solid var(--yellow); 
-    padding-left: 15px; 
-}
-
-/* GRID SYSTEMS */
-.grid-container {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-}
-
-/* CARDS */
-.card-box {
-    background: var(--card-bg); 
-    padding: 35px 20px; 
-    border-radius: 15px;
-    text-align: center; 
-    border: 1px solid var(--border-color); 
-    transition: 0.4s;
-}
-.card-box:hover { 
-    border-color: var(--yellow); 
-    transform: translateY(-8px); 
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
-}
-.icon-skill { font-size: 3rem; margin-bottom: 15px; }
-
-/* PROJECT CARDS */
-.project-card {
-    background: var(--card-bg); 
-    padding: 25px; 
-    border-radius: 15px;
-    border: 1px solid var(--border-color); 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between;
-    transition: 0.3s;
-}
-.project-card:hover { 
-    border-color: var(--blue); 
-    box-shadow: 0 0 15px rgba(0, 210, 255, 0.2); 
-}
-.p-header { color: var(--yellow); font-size: 0.75rem; font-weight: bold; margin-bottom: 10px; letter-spacing: 1px; }
-.project-card h3 { font-size: 1.4rem; margin-bottom: 10px; }
-.project-card p { color: var(--gray); font-size: 0.95rem; margin-bottom: 20px; }
-.p-btn { color: var(--blue); text-decoration: none; font-weight: bold; }
-
-/* CONTACT CTA */
-.contact-cta {
-    text-align: center;
-    margin-top: 50px;
-    padding: 40px;
-    background: rgba(14, 19, 34, 0.6);
-    border-radius: 20px;
-    border: 2px dashed var(--yellow);
-}
-.contact-cta p { font-size: 1.2rem; margin-bottom: 20px; color: #ccc; }
-
-/* MAPS & FOOTER */
-.map-container { border-radius: 20px; overflow: hidden; border: 2px solid var(--border-color); }
-footer { padding: 40px; text-align: center; color: var(--gray); font-size: 0.9rem; border-top: 2px solid var(--border-color); }
-
-/* RESPONSIVE */
-@media (max-width: 992px) {
-    .hero { flex-direction: column-reverse; text-align: center; justify-content: center; padding-top: 40px; }
-    .hero-interactive { flex-direction: column; }
-    .spotlight-box-3d { width: 280px; height: 340px; }
-}
 /* =========================================
-   NEW ABOUT SECTION (GAMBAR 3D & TEKS)
+   ABOUT SECTION (GAMBAR 3D & TEKS)
 ========================================= */
 .about-container {
     display: flex;
@@ -563,7 +328,6 @@ footer { padding: 40px; text-align: center; color: var(--gray); font-size: 0.9re
     justify-content: center;
 }
 
-/* Animasi ngambang (floating) untuk gambar 3D */
 .about-3d-img {
     width: 100%;
     max-width: 450px;
@@ -589,7 +353,6 @@ footer { padding: 40px; text-align: center; color: var(--gray); font-size: 0.9re
     text-align: justify;
 }
 
-/* Styling Kotak Pantun */
 .pantun-box {
     margin-top: 30px;
     background: rgba(0, 210, 255, 0.05);
@@ -607,52 +370,174 @@ footer { padding: 40px; text-align: center; color: var(--gray); font-size: 0.9re
     line-height: 1.6;
 }
 
-/* Responsive agar bersusun di HP */
-@media (max-width: 992px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .about-content p {
-        text-align: center; /* Ubah ke rata tengah jika di layar kecil */
-    }
-    .pantun-box {
-        text-align: center;
-        border-left: none;
-        border-top: 5px solid var(--yellow);
-        border-radius: 15px;
-    }
-}
 /* =========================================
-   STYLE TAMBAHAN: PROJECTS GAMBAR
+   SECTIONS COMMON
 ========================================= */
-.project-card {
-    padding: 0; 
-    overflow: hidden;
+.section-pad { padding: 80px 8%; }
+.section-title { 
+    font-size: 2rem; 
+    margin-bottom: 40px; 
+    color: var(--text); 
+    border-left: 5px solid var(--yellow); 
+    padding-left: 15px; 
 }
-.project-img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-bottom: 2px solid var(--border-color);
-    transition: 0.3s;
+
+/* GRID SYSTEMS */
+.grid-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
 }
-.project-card:hover .project-img {
-    transform: scale(1.05);
-    border-color: var(--blue);
-}
-.p-content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: calc(100% - 180px); 
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 /* =========================================
-   PERBAIKAN TAMPILAN MOBILE (HP) USER FRIENDLY
+   CARDS (EDUCATION, SKILLS, SERVICES)
 ========================================= */
+.card-box {
+    background: var(--card-bg); 
+    padding: 35px 20px; 
+    border-radius: 15px;
+    text-align: center; 
+    border: 1px solid var(--border-color); 
+    transition: 0.4s;
+}
+.card-box:hover { 
+    border-color: var(--yellow); 
+    transform: translateY(-8px); 
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+.icon-skill { font-size: 3rem; margin-bottom: 15px; }
+
+.edu-card {
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s;
+}
+.edu-card:hover {
+    border-color: var(--yellow);
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+.edu-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #070913;
+    border: 1px solid var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.edu-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 5px;
+}
+.edu-info h3 { font-size: 1.15rem; color: #fff; margin-bottom: 5px; }
+.edu-info .location { color: var(--gray); font-size: 0.85rem; margin-bottom: 8px; }
+.edu-tag { 
+    font-size: 0.75rem; 
+    background: rgba(0, 210, 255, 0.15); 
+    color: var(--blue); 
+    padding: 3px 10px; 
+    border-radius: 10px; 
+    border: 1px solid var(--blue);
+}
+
+/* =========================================
+   PROJECT CARDS (Rapi, Tanpa Gambar)
+========================================= */
+.project-card {
+    background: var(--card-bg); 
+    padding: 25px; 
+    border-radius: 15px;
+    border: 1px solid var(--border-color); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    transition: 0.3s;
+}
+.project-card:hover { 
+    border-color: var(--blue); 
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.2); 
+}
+.p-header { 
+    color: var(--yellow); 
+    font-size: 0.75rem; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    letter-spacing: 1px; 
+}
+.project-card h3 { 
+    font-size: 1.4rem; 
+    margin-bottom: 10px; 
+}
+.project-card p { 
+    color: var(--gray); 
+    font-size: 0.95rem; 
+    margin-bottom: 20px; 
+}
+.p-btn { 
+    color: var(--blue); 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+/* =========================================
+   CONTACT CTA & FOOTER
+========================================= */
+.contact-cta {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+    background: rgba(14, 19, 34, 0.6);
+    border-radius: 20px;
+    border: 2px dashed var(--yellow);
+}
+.contact-cta p { font-size: 1.2rem; margin-bottom: 20px; color: #ccc; }
+
+.map-container { border-radius: 20px; overflow: hidden; border: 2px solid var(--border-color); }
+footer { padding: 40px; text-align: center; color: var(--gray); font-size: 0.9rem; border-top: 2px solid var(--border-color); }
+
+/* =========================================
+   RESPONSIVE (HP & TABLET) - DIJADIKAN SATU
+========================================= */
+@media (max-width: 992px) {
+    /* Hero */
+    .hero { 
+        flex-direction: column-reverse; 
+        text-align: center; 
+        justify-content: center; 
+        padding-top: 40px; 
+    }
+    .hero-interactive { flex-direction: column; }
+    
+    /* About */
+    .about-container { flex-direction: column; text-align: center; }
+    .about-content p { text-align: center; }
+    .pantun-box { 
+        text-align: center; 
+        border-left: none; 
+        border-top: 5px solid var(--yellow); 
+        border-radius: 15px; 
+    }
+}
+
 @media (max-width: 768px) {
+    /* Navbar */
     .navbar {
         flex-direction: column;
         padding: 15px 5%;
@@ -664,9 +549,10 @@ footer { padding: 40px; text-align: center; color: var(--gray); font-size: 0.9re
         gap: 15px;
         font-size: 0.9rem;
     }
+
+    /* Hero */
     .hero {
         padding: 40px 5%;
-        text-align: center;
         gap: 20px;
     }
     .hero-content h1 {
@@ -682,15 +568,21 @@ footer { padding: 40px; text-align: center; color: var(--gray); font-size: 0.9re
     .robot-companion-3d {
         transform: scale(0.8);
     }
+
+    /* Sections Global */
     .section-pad {
         padding: 60px 5%;
     }
     .section-title {
         font-size: 1.6rem;
     }
+
+    /* Grid (Services, Skills, Projects, Education) */
     .grid-container, .education-grid {
         grid-template-columns: 1fr;
     }
+
+    /* Edukasi Card Info */
     .edu-card {
         flex-direction: column;
         text-align: center;
@@ -698,4 +590,3 @@ footer { padding: 40px; text-align: center; color: var(--gray); font-size: 0.9re
         padding: 20px;
     }
 }
-
